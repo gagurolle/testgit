@@ -1,0 +1,1 @@
+ssh gagurolle@34.69.240.232 -i "C:\Users\gagur\Desktop\a\privatekey.ppk"
