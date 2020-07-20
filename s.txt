@@ -1,7 +1,7 @@
 dotnet publish C:\Users\gagur\source\repos\gagurolle\TelegramCoreBot
 
 
-
+s
 
 rm -Rfv /tgbot/publish
 rm -fv /config.ini
