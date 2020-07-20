@@ -1,0 +1,41 @@
+dotnet publish C:\Users\gagur\source\repos\gagurolle\TelegramCoreBot
+
+
+rm -Rfv /tgbot/publish
+rm -fv /config.ini
+rm -fv /TelegramBD.db
+killall dotnet
+killall chromedriver
+scp -r C:\Users\gagur\source\repos\gagurolle\TelegramCoreBot\TelegramCore\bin\Debug\netcoreapp3.1\publish root@62.108.35.38:/tgbot
+scp C:\Users\gagur\TelegramBD.db root@62.108.35.38:/
+scp C:\Users\gagur\config.ini root@62.108.35.38:/
+
+scp root@62.108.35.38:/Log.db C:\Users\gagur\ 
+
+scp -r C:\Users\gagur\tgbot\ root@62.108.35.38:/tgbot
+scp -r C:\Users\gagur\proxy_list.txt root@62.108.35.38:/
+scp -r C:\Users\gagur\chromedriver root@62.108.35.38:/
+scp -r C:\Users\gagur\confog.ini root@62.108.35.38:/
+scp -r C:\Users\gagur\TelegramBD.db root@62.108.35.38:/
+scp -r C:\Users\gagur\Log.db root@62.108.35.38:/
+
+scp  root@62.108.35.38:/TelegramBD.db C:\Users\gagur\
+
+nohup dotnet /tgbot/publish/TelegramCore.dll no>/dev/null &
+chmod -R u+x /tgbot/publish 
+
+ssh root@62.108.35.38 rm -Rfv /tgbot/publish
+ssh root@62.108.35.38 killall dotnet
+ssh root@62.108.35.38 nohup dotnet tgbot/publish/TelegramCore.dll no>/dev/null &
+ssh root@62.108.35.38 rm -fv /TelegramBD.db
+ssh root@62.108.35.38
+130171Vrub
+
+cp -r /tgbot/ /lastversion/tgbot20200703
+
+scp -r C:\Users\gagur\source\repos\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp3.1\publish root@62.108.35.38:/CheckProxy
+C:\Users\gagur\source\repos\cxv\cxv\bin\Debug\netcoreapp3.1\publish\
+
+scp -r C:\Users\gagur\source\repos\cxv\cxv\bin\Debug\netcoreapp3.1\publish\ root@62.108.35.387:/test
+
+chmod -R u+x /test/publish 
